@@ -1,5 +1,7 @@
 body {
     background-color: #fffbf7;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
@@ -19,9 +21,10 @@ button {
 }
 
 .header {
-    margin: 40px 20px 0px 20px ;
+    margin: 10px 20px 0px 20px ;
     font-size: 0;
     line-height: 45px;
+    z-index: 10;
 }
 
 .header > * {
@@ -65,10 +68,232 @@ ul > li{
     margin:  0 10px 0 10px;
 }
 
-.actions button{
+.actions > button{
     color:white;
     background-color: #67b54b;
     padding: 12px 14px;
     border: none;
     border-radius: 5px;
+    
+}
+
+.promocion{
+    display: flex;
+}
+
+.video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video img{
+    width: 120px;
+  margin-top: 10px;
+}
+
+.fixed-header{
+    position: fixed;
+    background-color: white;
+    margin: 0;
+    padding: 10px 0 0 20px;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.seccion{
+    background-color: #a1d683;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5% 15%;
+}
+
+.card{
+    position: relative;
+}
+
+.slider{
+    padding: 20px;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:white ;
+    border-radius: 20px;
+}
+
+.imagen{
+    position: relative;
+}
+
+.imagen figure{
+    padding: 0;
+    margin: 0;
+    height: 16vw;
+}
+
+.imagen figure img{
+    height: 16vw;
+    width: 100%;
+ }
+
+.slider img {
+    border-radius: 20px 20px 0 0;
+    max-width: 100%;
+}
+
+.seccion > .texto > h2{
+    font-size: 51px;
+    line-height: 61px;
+    color: rgb(2, 81, 87);
+    font-weight: 700;
+}
+
+.seccion > .texto > p{
+    color: rgb(52, 52, 52);
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+
+.seccion > .texto > button{
+    font-size: 14px;
+    height: 45px;
+    font-weight: 600;
+    margin-left: 0px;
+    padding: 12px 12px 6px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.seccion .texto figure img{
+    width: 500px;
+    max-width: 100%;;
+}
+
+.slider .card .texto-slider{
+    color: rgb(2, 81, 87);
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 10px;
+    padding: 0px 20px 0 20px;
+    margin: 0;
+}
+
+.slider .card .texto-slider p{
+    color: rgb(52, 52, 52);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-bottom: 0;
+}
+
+.logo-slider{
+    position: absolute;
+    bottom: -20px;
+    right: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: #f9da73;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icono{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    color: #828282;
+    padding: 0 20px 0px 20px;
+}
+
+.icono img{
+    width: 26px;
+    margin-right: 20px;
+}
+
+.icono p{
+    font-size: 15px;
+}
+
+.boton-card{
+    width: 80%;
+    padding: 20px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.features{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 330px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+.feature-art{
+    background-color: orange;    
+}
+
+.cards{
+    padding: 30px 50px;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    background-color: #025157;
+}
+
+.f-card{
+    border-radius: 5px;
+    display:grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.content-card{
+    border-radius: 20px;
+    padding: 15px 20px;
+
+}
+
+.content-card > a{
+    font-size: 16px;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.image-card{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+    margin-left: 30px;
+}
+
+.image-card > figure img{
+    position: absolute;
+    height: 100%;
+}
+
+.content-card > h3{
+    font-size: 25px;
+}
+
+.content-card > figure > img{
+    width: 50px;
 }
