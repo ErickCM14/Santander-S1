@@ -1,7 +1,11 @@
-body {
-    background-color: #fffbf7;
+*{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fffbf7;
 }
 
 h1 {
@@ -18,6 +22,7 @@ p {
 button {
     color: #fff;
     background-color: #025157;
+    border: none;
 }
 
 .header {
@@ -296,4 +301,101 @@ ul > li{
 
 .content-card > figure > img{
     width: 50px;
+}
+
+.explore{
+    background-color: #fffbf7;
+    padding: 5% 10%;
+    text-align: center;
+}
+
+.explore > h2 {
+    color: #025157;
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.explore > p{
+    max-width: 60%;
+    color: #46484c;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0 auto;
+    margin-bottom: 16px
+}
+
+.explore > button{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 14px;
+    height: 45px;
+    margin-left: 0;
+    border-radius: 8px;
+    margin-top: 6px;
+}
+
+.explore > .cards-grid{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.explore > .cards-grid > .card-grid{
+    background-color: #fff;
+    border: 1px solid #dadada;
+    border-radius: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 25px 0;
+    text-align: left;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-image{
+    position: relative;
+    height: 350px;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-body{
+    padding: 25px;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-body > h3{
+    font-size: 30px;
+    line-height: 36px;
+    color: #025157;
+    font-weight: 700;
+    text-align: center;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-body > p{
+    font-size: 15px;
+    line-height: 1.5;
+    color: #46484c;
+    font-weight: 400;
+    height: 85px;
+    margin-bottom: 20px;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-body > a{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #67b54b;
+    font-weight: 600;
+    text-decoration: none;
+    margin-top: 60px;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-image > .image{
+    width: 100%;
+    height: 100%;
+}
+
+.explore > .cards-grid > .card-grid > .card-grid-image > .icono{
+    position: absolute;
+    height: 20px;
+    top: 25px;
+    left: 25px;
 }
