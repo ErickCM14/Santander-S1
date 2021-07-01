@@ -5,8 +5,13 @@
     <!-- Caracteres que utiliza -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
     <title>Sesión 1 - Santander</title>
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
+
     <link rel="stylesheet" href="styles.css">
 
 
@@ -14,7 +19,7 @@
 
 <body>
 
-    <header class="header fixed-header">
+    <!-- <header class="header fixed-header">
         <a href="./index.html" class="logo">
             <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Logo">
         </a>
@@ -33,218 +38,263 @@
             <button class="boton">Start free trial</button>
         </div>
 
-    </header>
+    </header> -->
 
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="/">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/footer_logo.svg" alt="Matcha" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="/">Platform</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="pricing.html">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Customers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <a>Sign In</a>
+                <button>Start free trial</button>
+            </form>
+        </div>
+    </nav>
 
-    <h1> Mi primer etiqueta </h1>
-    <h2> Este es un H2 </h2>
-    <h3> Este es un H3</h3>
-    <h4>Este es un H4</h4>
-    <h5> Este es un H5</h5>
-    <h6>Este es un H6</h6>
-    <p>Este es <strong>un parrafo de ejemplo</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus
-        magni, rerum consequatur nihil animi dicta at fuga unde impedit. Nemo odio assumenda amet suscipit itaque
-        quaerat autem dolorum fugiat harum!</p>
+    <main>
+        <h1> Mi primer etiqueta </h1>
+        <h2> Este es un H2 </h2>
+        <h3> Este es un H3</h3>
+        <h4>Este es un H4</h4>
+        <h5> Este es un H5</h5>
+        <h6>Este es un H6</h6>
+        <p>Este es <strong>un parrafo de ejemplo</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Delectus
+            magni, rerum consequatur nihil animi dicta at fuga unde impedit. Nemo odio assumenda amet suscipit itaque
+            quaerat autem dolorum fugiat harum!</p>
 
-    <form action="">
-        <label for="name">Nombre</label>
-        <input type="text" id="name" required placeholder="Nombre"> <br>
-        <label for="apellido">Apellido</label>
-        <input type="text" id="apellido" required placeholder="Apellido"> <br>
-        <label for="edad">Edad</label>
-        <input type="number" id="edad" min="18" max="99" required placeholder="Edad"> <br>
-        <label for="email">Email</label>
-        <input type="email" name="" id="email" required placeholder="Email"> <br>
-        <label for="password">Password</label>
-        <input type="password" name="password" required id="password" placeholder="Contraseña"><br>
-        <button type="submit">Enviar &rarr;</button>
-    </form>
-
-    <br>
-
-    <img src="https://app.bedu.org/assets/images/logo-bedu-black@3x.svg" alt="Bedu">
-
-    <section class="promocion">
-        <article class="video">
-            <video controls poster="https://i.pinimg.com/originals/c6/cf/e4/c6cfe47895b553ce1c862e6b66afc1a9.jpg"
-                width="450px">
-                <source type="video/mp4"
-                    src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
-                </source>
-                <source type="video/webm"
-                    src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
-                </source>
-            </video>
-            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
-                alt="See how it works" />
-        </article>
+        <figure class="banner">
+            <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/capterra.png" alt="Capterra" />
+        </figure>
 
         <article class="publish">
-            <h3>Anuncio</h3>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea earum
-            </p>
             <form action="">
                 <label for="name">Nombre</label>
-                <input type="text" id="name" required placeholder="Nombre"> <br>
+                <input type="text" id="name" required placeholder="Nombre">
                 <label for="apellido">Apellido</label>
-                <input type="text" id="apellido" required placeholder="Apellido"> <br>
+                <input type="text" id="apellido" required placeholder="Apellido">
                 <label for="edad">Edad</label>
-                <input type="number" id="edad" min="18" max="99" required placeholder="Edad"> <br>
+                <input type="number" id="edad" min="18" max="99" required placeholder="Edad">
                 <label for="email">Email</label>
-                <input type="email" name="" id="email" required placeholder="Email"> <br>
+                <input type="email" name="" id="email" required placeholder="Email">
                 <label for="password">Password</label>
-                <input type="password" name="password" required id="password" placeholder="Contraseña"><br>
+                <input type="password" name="password" required id="password" placeholder="Contraseña">
                 <button type="submit">Enviar &rarr;</button>
             </form>
         </article>
-    </section>
+        <br>
 
+        <img src="https://app.bedu.org/assets/images/logo-bedu-black@3x.svg" alt="Bedu">
 
-    <section class="features">
-        <article class="feature-art">Caracteristicas 1</article>
-        <article class="feature-art">Caracteristicas 2</article>
-        <article class="feature-art">Caracteristicas 3</article>
-        <article class="feature-art">Caracteristicas 4</article>
-    </section>
+        <section class="promocion">
+            <article class="video">
+                <video controls poster="https://i.pinimg.com/originals/c6/cf/e4/c6cfe47895b553ce1c862e6b66afc1a9.jpg"
+                    width="450px">
+                    <source type="video/mp4"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
+                    </source>
+                    <source type="video/webm"
+                        src="https://cdn.videvo.net/videvo_files/video/premium/video0036/small_watermarked/computer_code00_preview.mp4">
+                    </source>
+                </video>
+                <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/see_how_it_works.png"
+                    alt="See how it works" />
+            </article>
 
-    <section class="cards">
-        <article class="f-card">
-            <div class="content-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png"
-                        alt="Publish icon" />
-                </figure>
-                <h3>Fill your blog with engaging articles.</h3>
+            <article class="publish">
+                <h3>Anuncio</h3>
                 <p>
-                    Publish to your blog in less time than it takes to drink your
-                    morning coffee.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ea earum
                 </p>
-                <a href="">Publish instantly →</a>
-
-            </div>
-            <div class="image-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
-                        alt="Publish example" />
-                </figure>
-            </div>
-        </article>
-        <article class="f-card">
-            <div class="content-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png"
-                        alt="Site traffic icon" />
-                </figure>
-                <h3>Attract and engage more website visitors.</h3>
-                <p>
-                    Enhance your email, social media channels, and paid ads with content
-                    from Matcha.
-                </p>
-                <a href="">Get more site traffic →</a>
-            </div>
-            <div class="image-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png"
-                        alt="Site traffic example" />
-                </figure>
-            </div>
-        </article>
-        <article class="f-card">
-            <div class="content-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png"
-                        alt="Capture icon" />
-                </figure>
-                <h3>Capture more emails with locked content.</h3>
-                <p>
-                    Convert 10x more of your traffic into subscribers and nurture them
-                    to a sale.
-                </p>
-                <a href="">Grow your email list faster →</a>
-
-            </div>
-            <div class="image-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png"
-                        alt="Capture example" />
-                </figure>
-            </div>
-        </article>
-
-        <article class="f-card">
-            <div class="content-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="ROI icon" />
-                </figure>
-                <h3>Optimize your blog’s performance.</h3>
-                <p>
-                    See what content delivers the most traffic, engagement, email
-                    subscribers, and sales.
-                </p>
-                <a href="">See content’s ROI →</a>
-
-            </div>
-            <div class="image-card">
-                <figure>
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png" alt="ROI example" />
-                </figure>
-
-            </div>
-        </article>
-    </section>
+                <form action="">
+                    <label for="name">Nombre</label>
+                    <input type="text" id="name" required placeholder="Nombre"> <br>
+                    <label for="apellido">Apellido</label>
+                    <input type="text" id="apellido" required placeholder="Apellido"> <br>
+                    <label for="edad">Edad</label>
+                    <input type="number" id="edad" min="18" max="99" required placeholder="Edad"> <br>
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" required placeholder="Email"> <br>
+                    <label for="password">Password</label>
+                    <input type="password" name="password" required id="password" placeholder="Contraseña"><br>
+                    <button type="submit">Enviar &rarr;</button>
+                </form>
+            </article>
+        </section>
 
 
+        <section class="features">
+            <article class="feature-art">Caracteristicas 1</article>
+            <article class="feature-art">Caracteristicas 2</article>
+            <article class="feature-art">Caracteristicas 3</article>
+            <article class="feature-art">Caracteristicas 4</article>
+        </section>
 
-
-    <section class="seccion">
-        <article class="texto">
-            <h2>Growing ecommerce brands rely on Matcha</h2>
-            <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact on
-                sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality content
-                and consistent performance from their blogs. </p>
-            <button>Who Uses Matcha?</button>
-            <figure>
-                <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Negocios">
-            </figure>
-
-        </article>
-        <article class="slider">
-            <div class="card">
-                <div class="imagen">
+        <section class="cards">
+            <article class="f-card">
+                <div class="content-card">
                     <figure>
-                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
-                            alt="Imagen">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_publish.png"
+                            alt="Publish icon" />
                     </figure>
-                    <div class="logo-slider">
-                        <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
-                            alt="Compañia">
-                    </div>
-                </div>
-                <div class="texto-slider">
-                    <h4>Everly</h4>
-                    <p>Early-Stage CPG Braned Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
-                </div>
-                <div class="icono">
-                    <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png" alt="icono">
-                    <p>500% increase in traffic from social media</p>
-                </div>
-                <button class="boton-card">See Case Study</button>
-            </div>
-        </article>
-    </section>
+                    <h3>Fill your blog with engaging articles.</h3>
+                    <p>
+                        Publish to your blog in less time than it takes to drink your
+                        morning coffee.
+                    </p>
+                    <a href="">Publish instantly →</a>
 
-    <section class="explore">
+                </div>
+                <div class="image-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_publish.png"
+                            alt="Publish example" />
+                    </figure>
+                </div>
+            </article>
+            <article class="f-card">
+                <div class="content-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_site_traffic.png"
+                            alt="Site traffic icon" />
+                    </figure>
+                    <h3>Attract and engage more website visitors.</h3>
+                    <p>
+                        Enhance your email, social media channels, and paid ads with content
+                        from Matcha.
+                    </p>
+                    <a href="">Get more site traffic →</a>
+                </div>
+                <div class="image-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_site_traffic.png"
+                            alt="Site traffic example" />
+                    </figure>
+                </div>
+            </article>
+            <article class="f-card">
+                <div class="content-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_capture.png"
+                            alt="Capture icon" />
+                    </figure>
+                    <h3>Capture more emails with locked content.</h3>
+                    <p>
+                        Convert 10x more of your traffic into subscribers and nurture them
+                        to a sale.
+                    </p>
+                    <a href="">Grow your email list faster →</a>
+
+                </div>
+                <div class="image-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_capture.png"
+                            alt="Capture example" />
+                    </figure>
+                </div>
+            </article>
+
+            <article class="f-card">
+                <div class="content-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_roi.png" alt="ROI icon" />
+                    </figure>
+                    <h3>Optimize your blog’s performance.</h3>
+                    <p>
+                        See what content delivers the most traffic, engagement, email
+                        subscribers, and sales.
+                    </p>
+                    <a href="">See content’s ROI →</a>
+
+                </div>
+                <div class="image-card">
+                    <figure>
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/image_roi.png"
+                            alt="ROI example" />
+                    </figure>
+
+                </div>
+            </article>
+        </section>
+
+
+
+
+        <section class="seccion">
+            <article class="texto">
+                <h2>Growing ecommerce brands rely on Matcha</h2>
+                <p>Are you tired of wasting time publishing blog articles to only see a trickle of traffic and no impact
+                    on
+                    sales? Join hundreds of business owners and ecommerce marketers who rely on Matcha for quality
+                    content
+                    and consistent performance from their blogs. </p>
+                <button>Who Uses Matcha?</button>
+                <figure>
+                    <img src="https://getmatcha.com/wp-content/uploads/2019/09/brands_group.png" alt="Negocios">
+                </figure>
+
+            </article>
+            <article class="slider">
+                <div class="card">
+                    <div class="imagen">
+                        <figure>
+                            <img src="https://getmatcha.com/wp-content/uploads/2019/05/profile-headshot-square.png"
+                                alt="Imagen">
+                        </figure>
+                        <div class="logo-slider">
+                            <img src="https://getmatcha.com/wp-content/uploads/2019/05/everly_logo_blue_v3_x60@2x.png"
+                                alt="Compañia">
+                        </div>
+                    </div>
+                    <div class="texto-slider">
+                        <h4>Everly</h4>
+                        <p>Early-Stage CPG Braned Increases Lead Conversion 20x, Ecommerce Revenue 20%</p>
+                    </div>
+                    <div class="icono">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_audiences.png" alt="icono">
+                        <p>500% increase in traffic from social media</p>
+                    </div>
+                    <button class="boton-card">See Case Study</button>
+                </div>
+            </article>
+        </section>
+
+        <section class="explore">
             <h2>How does Matcha wok?</h2>
-            <p>Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog into an ecommerce growth engine.</p>
+            <p>Your blog can be so much more than window dressing. Use Matcha’s simple formula to transform your blog
+                into an ecommerce growth engine.</p>
             <button>Explore the platform</button>
             <div class="cards-grid">
                 <article class="card-grid">
 
                     <div class="card-grid-image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish" class="image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Icono" class="icono">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-publish.png" alt="Publish"
+                            class="image">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_content.png" alt="Icono"
+                            class="icono">
                     </div>
 
                     <div class="card-grid-body">
@@ -258,8 +308,10 @@
                 <article class="card-grid">
 
                     <div class="card-grid-image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="Promote" class="image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="Icono" class="icono">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-promote.png" alt="Promote"
+                            class="image">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_channels.png" alt="Icono"
+                            class="icono">
                     </div>
 
                     <div class="card-grid-body">
@@ -273,8 +325,10 @@
                 <article class="card-grid">
 
                     <div class="card-grid-image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Capture" class="image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Icono" class="icono">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Capture"
+                            class="image">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-capture.png" alt="Icono"
+                            class="icono">
                     </div>
 
                     <div class="card-grid-body">
@@ -288,20 +342,125 @@
                 <article class="card-grid">
 
                     <div class="card-grid-image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="Measure" class="image">
-                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_chart.png" alt="icono" class="icono">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/ill-measure.png" alt="Measure"
+                            class="image">
+                        <img src="https://getmatcha.com/wp-content/themes/getmatcha/img/icon_chart.png" alt="icono"
+                            class="icono">
                     </div>
 
                     <div class="card-grid-body">
                         <h3>Measure</h3>
-                        <p>See what’s working and what’s not to easily optimize for more traffic, email subscribers, and sales.</p>
+                        <p>See what’s working and what’s not to easily optimize for more traffic, email subscribers, and
+                            sales.</p>
                         <a href="#">Track performance →</a>
                     </div>
 
                 </article>
 
             </div>
-    </section>
+        </section>
+    </main>
+
+    <div id="carouselExampleIndicators" class="carousel slide w-50 mx-auto mt-5 mb-5" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://estaticos-cdn.sport.es/clip/2fda838b-d74d-4bd1-9139-2247c1044056_media-libre-aspect-ratio_default_0.jpg" class="d-block w-100" alt="Cristiano Portugal">
+          </div>
+          <div class="carousel-item">
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2018/05/28/15275237656999.jpg" class="d-block w-100" alt="Cristiano Real Madrid">
+          </div>
+          <div class="carousel-item">
+            <img src="https://e00-marca.uecdn.es/assets/multimedia/imagenes/2017/12/07/15126710890480.jpg" class="d-block w-100" alt="CR7 balon de oro">
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+
+
+      <div class="elements-bootstarp container" style="display: flex;">
+        <ul class="list-group">
+            <li class="list-group-item active" aria-current="true">An active item</li>
+            <li class="list-group-item">A second item</li>
+            <li class="list-group-item">A third item</li>
+            <li class="list-group-item">A fourth item</li>
+            <li class="list-group-item">And a fifth one</li>
+          </ul>
+        <div class="card mb-5" style="width: 18rem;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/LeBron_James_Lakers.jpg/245px-LeBron_James_Lakers.jpg" class="card-img-top" alt="Lebron James">
+            <div class="card-body">
+              <h5 class="card-title">LeBron James</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+          <form>
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1">
+            </div>
+            <div class="form-group form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">Check me out</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button> 
+            <div class="spinner-border" role="status">
+                <span class="sr-only">Loading...</span>
+              </div>
+          </form>
+        
+          <div class="dropdown">
+            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Dropdown button
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </div>    
+      </div>
+
+      <div class="container">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+              <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+              <li class="page-item"><a class="page-link" href="#">1</a></li>
+              <li class="page-item"><a class="page-link" href="#">2</a></li>
+              <li class="page-item"><a class="page-link" href="#">3</a></li>
+              <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            </ul>
+          </nav>
+      </div>
+      
+      
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 
 </body>
 
